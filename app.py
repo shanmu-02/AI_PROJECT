@@ -8,7 +8,7 @@ st.set_page_config(page_title="AI Learning Buddy", page_icon="🎓", layout="wid
 # Initialize Gemini Client
 # It automatically picks up the GEMINI_API_KEY environment variable
 try:
-    client = genai.Client()
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 except Exception as e:
     st.error("Please set your GEMINI_API_KEY environment variable.")
     st.stop()
