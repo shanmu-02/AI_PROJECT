@@ -13,7 +13,7 @@ except Exception as e:
     st.stop()
 
 # --- Main App Interface ---
-st.title("🎓 AI Learning Buddy Manasvi")  # <-- put your buddy's name here
+st.title("🎓 AI Learning Buddy Shanmu")  # <-- put your buddy's name here
 
 topic = st.text_input("Enter a Topic")
 
